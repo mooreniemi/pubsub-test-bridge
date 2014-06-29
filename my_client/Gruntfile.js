@@ -48,7 +48,7 @@ module.exports = function(grunt) {
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
                     '<%= yeoman.app %>/scripts/templates/*.{ejs,mustache,hbs}',
-                    'test/spec/**/*.js'
+                    'spec/**/*.js'
                 ]
             },
             jst: {
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
                         return [
                             lrSnippet,
                             mountFolder(connect, '.tmp'),
-                            mountFolder(connect, 'test'),
+                            mountFolder(connect, 'spec'),
                             mountFolder(connect, yeomanConfig.app)
                         ];
                     }
@@ -131,7 +131,7 @@ module.exports = function(grunt) {
                 src: '/scripts/{,*/}*.js',
                 options: {
                     keepRunner: true,
-                    specs: 'test/spec/**/*.js',
+                    specs: 'spec/**/*.js',
                     vendor: [
                         '<%= yeoman.app %>/bower_components/jquery/dist/jquery.js',
                         '<%= yeoman.app %>/bower_components/lodash/dist/lodash.js',

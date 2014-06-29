@@ -8,5 +8,7 @@
     "backbone": "~1.1.0",
     "modernizr": "~2.7.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "requirejs": "~2.1.14"
+  }
 }

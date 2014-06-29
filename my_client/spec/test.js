@@ -1,10 +1,10 @@
 /*global describe, it */
 'use strict';
 
-(function () {
-    describe('Give it some context', function () {
-        describe('maybe a bit more context here', function () {
-            it('should run here few assertions', function () {
+(function() {
+    describe('Integration test', function() {
+        describe('getting high scores', function() {
+            it('should show scores on fetch', function() {
 
             });
         });
