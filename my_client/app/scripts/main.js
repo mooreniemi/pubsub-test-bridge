@@ -6,9 +6,14 @@ require.config({
         bootstrap: {
             deps: ['jquery'],
             exports: 'jquery'
+        },
+        'handlebars': {
+            exports: 'Handlebars'
         }
     },
     paths: {
+        'app': 'app/scripts',
+        handlebars: '../bower_components/handlebars/handlebars',
         jquery: '../bower_components/jquery/dist/jquery',
         backbone: '../bower_components/backbone/backbone',
         underscore: '../bower_components/lodash/dist/lodash',
@@ -19,6 +24,5 @@ require.config({
 require([
     'backbone'
 ], function(Backbone) {
-    console.log('successfully initialized');
     Backbone.history.start();
 });
