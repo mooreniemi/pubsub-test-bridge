@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/mooreniemi/apitome
+  revision: 74b7243ca0965790e480da65cbff1a51eeda9cd1
+  specs:
+    apitome (0.0.7)
+      kramdown (= 1.3.3)
+      railties (>= 3.2.5, < 5)
+      rspec_api_documentation
+
+GIT
   remote: https://github.com/zipmark/rspec_api_documentation
   revision: 96c8747ce8109fd0e0cfbecd30b18a591dde9b53
   ref: 96c8747
@@ -37,10 +46,6 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    apitome (0.0.7)
-      github-markdown
-      railties (>= 3.2.5, < 5)
-      rspec_api_documentation
     arel (4.0.2)
     builder (3.1.4)
     byebug (2.7.0)
@@ -53,11 +58,10 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     eventmachine (1.0.3)
-    github-markdown (0.6.5)
     hike (1.2.3)
     i18n (0.6.9)
     json (1.8.1)
-    kramdown (1.4.0)
+    kramdown (1.3.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -141,7 +145,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  apitome
+  apitome!
   kramdown
   pry
   pry-byebug

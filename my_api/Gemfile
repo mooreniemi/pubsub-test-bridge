@@ -16,7 +16,7 @@ group :development, :test do
 	gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.0.1'
   gem 'rspec_api_documentation', :git => 'https://github.com/zipmark/rspec_api_documentation', :ref => '96c8747'
-  gem 'apitome'
+  gem 'apitome', :git => 'https://github.com/mooreniemi/apitome'
 end
 
 
