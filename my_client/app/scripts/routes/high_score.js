@@ -24,7 +24,9 @@ define([
                     el: $("#main"),
                     model: model
                 });
-            view.render();
+            model.fetch().done(function() {
+                view.render();
+            })
         }
 
     });

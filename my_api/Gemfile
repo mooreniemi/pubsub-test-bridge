@@ -10,6 +10,7 @@ gem 'rails-api'
 gem 'sqlite3'
 gem 'thin'
 gem 'kramdown'
+gem 'rack-cors'
 
 group :development, :test do
 	gem 'pry'

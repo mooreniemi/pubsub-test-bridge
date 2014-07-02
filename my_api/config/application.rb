@@ -24,5 +24,12 @@ module MyApi
       g.test_framework  :rspec, :fixture => true, :views => false
       g.integration_tool :rspec, :fixture => true, :views => true
     end
+
+    config.middleware.use Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :patch, :put, :delete, :options]
+      end
+    end
   end
 end

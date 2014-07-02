@@ -9,7 +9,7 @@ define([
     'use strict';
 
     var HighScoreView = Backbone.View.extend({
-        template: Handlebars.compile('<div>{{id}}</div>'),
+        template: Handlebars.compile('<div>{{id}}, {{game}}, {{score}}</div>'),
         events: {},
         initialize: function() {
             this.listenTo(this.model, 'change', this.render);
