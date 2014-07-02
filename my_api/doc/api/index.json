@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "name": "High Score",
+      "examples": [
+        {
+          "description": "Get a high_score",
+          "link": "high_score/get_a_high_score.json",
+          "groups": "public"
+        }
+      ]
+    }
+  ]
+}

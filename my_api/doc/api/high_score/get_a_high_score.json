@@ -1,0 +1,30 @@
+{
+  "resource": "High Score",
+  "http_method": "GET",
+  "route": "/high_scores/:id",
+  "description": "Get a high_score",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/high_scores/1",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"id\":1,\"game\":\"settlers of catan\",\"score\":200,\"created_at\":\"2014-06-26T01:10:34.263Z\",\"updated_at\":\"2014-06-26T01:10:34.263Z\"}",
+      "response_headers": {"X-Frame-Options":"SAMEORIGIN","X-XSS-Protection":"1; mode=block","X-Content-Type-Options":"nosniff","X-UA-Compatible":"chrome=1","Content-Type":"application/json; charset=utf-8","ETag":"\"87d824fa20d3345918c125d00163c1c4\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"2d04028a-9f9d-427a-8ea3-d0b1984fa132","X-Runtime":"0.010981","Content-Length":"127"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+}
+  ]
+}
