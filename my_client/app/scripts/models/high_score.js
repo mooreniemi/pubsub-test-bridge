@@ -3,22 +3,15 @@
 define([
     'underscore',
     'backbone'
-], function (_, Backbone) {
+], function(_, Backbone) {
     'use strict';
 
     var HighScoreModel = Backbone.Model.extend({
-        url: '',
+        url: 'http://0.0.0.0:3000/high_scores/1',
 
-        initialize: function() {
-        },
+        validate: function(attrs, options) {},
 
-        defaults: {
-        },
-
-        validate: function(attrs, options) {
-        },
-
-        parse: function(response, options)  {
+        parse: function(response, options) {
             return response;
         }
     });
