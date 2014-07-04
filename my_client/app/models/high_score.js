@@ -9,9 +9,9 @@ define([
     var HighScoreModel = Backbone.Model.extend({
         url: function() {
             if (this.id == 'test') {
-                return 'http://0.0.0.0:3000/api/docs/body/high-score/get-a-high-score.json'
+                return 'http://0.0.0.0:3000/api/docs/body/high-score/get-a-high-score.json';
             } else {
-                return 'http://0.0.0.0:3000/high_scores/1'
+                return 'http://0.0.0.0:3000/high_scores/' + this.id;
             }
         },
         validate: function(attrs, options) {},
