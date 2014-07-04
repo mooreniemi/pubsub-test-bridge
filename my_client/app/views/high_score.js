@@ -9,6 +9,7 @@ define([
     'use strict';
 
     var HighScoreView = Backbone.View.extend({
+        el: $("#main"),
         template: template,
         events: {},
         initialize: function() {

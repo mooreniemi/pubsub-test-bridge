@@ -21,7 +21,6 @@ define([
                 id: id
             }),
                 view = new HighScoreView({
-                    el: $("#main"),
                     model: model
                 });
             model.fetch().done(function() {
