@@ -2,14 +2,14 @@
 
 define([
     'jquery',
-    'underscore',
     'backbone',
-    'handlebars'
-], function($, _, Backbone, Handlebars) {
+    'handlebars',
+    'hbs!templates/high_score'
+], function($, Backbone, Handlebars, template) {
     'use strict';
 
     var HighScoreView = Backbone.View.extend({
-        template: Handlebars.compile('<table class="table"><tr><td>{{id}}</td></tr><tr><td>{{game}}</td></tr><tr><td>{{score}}</td></tr></table>'),
+        template: template,
         events: {},
         initialize: function() {
             this.listenTo(this.model, 'change', this.render);

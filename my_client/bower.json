@@ -14,6 +14,9 @@
     "handlebars": "~1.3.0",
     "bootstrap": "~3.2.0",
     "jquery": "~2.1.1",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "jasmine-fixture": "~1.2.0",
+    "requirejs-text": "~2.0.12",
+    "requirejs-hbs": "~0.1.1"
   }
 }
