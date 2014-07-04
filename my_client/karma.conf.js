@@ -2,78 +2,78 @@
 // Generated on Sun Jun 29 2014 21:25:14 GMT-0400 (EDT)
 
 module.exports = function(config) {
-  config.set({
+    config.set({
 
-    // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
-
-
-    // frameworks to use
-    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'requirejs'],
-
-    // list of files / patterns to load in the browser
-    files: [
-      'app/require_config.js',
-      'test-main.js',
-      // set included to false for files to be loaded via RequireJS
-      {
-        pattern: "app/bower_components/**/*.js",
-        included: false
-      }, {
-        pattern: "app/**/*.js",
-        included: false
-      }, {
-        pattern: "spec/*spec.js",
-        included: false
-      }, {
-        pattern: "app/templates/*.hbs",
-        included: false
-      }
-    ],
-
-    // list of files to exclude
-    exclude: [
-      // 'app/main.js'
-    ],
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-
-    },
+        // base path that will be used to resolve all patterns (eg. files, exclude)
+        basePath: '',
 
 
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['dots', 'progress'],
+        // frameworks to use
+        // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
+        frameworks: ['jasmine', 'requirejs'],
+
+        // list of files / patterns to load in the browser
+        files: [
+            'app/require_config.js',
+            'test-main.js',
+            // set included to false for files to be loaded via RequireJS
+            {
+                pattern: "app/bower_components/**/*.js",
+                included: false
+            }, {
+                pattern: "app/**/*.js",
+                included: false
+            }, {
+                pattern: "spec/*spec.js",
+                included: false
+            }, {
+                pattern: "app/templates/*.hbs",
+                included: false
+            }
+        ],
+
+        // list of files to exclude
+        exclude: [
+            // 'app/main.js'
+        ],
+
+        // preprocess matching files before serving them to the browser
+        // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+        preprocessors: {
+
+        },
 
 
-    // web server port
-    port: 9876,
+        // test results reporter to use
+        // possible values: 'dots', 'progress'
+        // available reporters: https://npmjs.org/browse/keyword/karma-reporter
+        reporters: ['progress', 'spec'],
 
 
-    // enable / disable colors in the output (reporters and logs)
-    colors: true,
+        // web server port
+        port: 9876,
 
 
-    // level of logging
-    // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
+        // enable / disable colors in the output (reporters and logs)
+        colors: true,
 
 
-    // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+        // level of logging
+        // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
+        logLevel: config.LOG_INFO,
 
 
-    // start these browsers
-    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+        // enable / disable watching file and executing tests whenever any file changes
+        autoWatch: true,
 
 
-    // Continuous Integration mode
-    // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
-  });
+        // start these browsers
+        // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+        browsers: ['Chrome'],
+
+
+        // Continuous Integration mode
+        // if true, Karma captures browsers, runs the tests and exits
+        singleRun: false
+    });
 };
