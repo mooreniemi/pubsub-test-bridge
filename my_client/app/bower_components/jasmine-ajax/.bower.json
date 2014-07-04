@@ -1,0 +1,39 @@
+{
+  "name": "jasmine-ajax",
+  "version": "2.0.0",
+  "homepage": "https://github.com/pivotal/jasmine-ajax",
+  "authors": [
+    "JR Boyens <jboyens@fooninja.org>"
+  ],
+  "description": "A library for faking Ajax responses in your Jasmine suite.",
+  "main": "lib/mock-ajax.js",
+  "dependencies": {
+    "jasmine": "2.0.0"
+  },
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jasmine",
+    "ajax"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "54864a45d3947721a50db363e8ecd647dcac82f5"
+  },
+  "_source": "git://github.com/pivotal/jasmine-ajax.git",
+  "_target": "~2.0.0",
+  "_originalSource": "jasmine-ajax",
+  "_direct": true
+}
