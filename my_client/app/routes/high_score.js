@@ -13,10 +13,9 @@ define([
             'high_scores/:id': 'show'
         },
         home: function() {
-            console.log('you are viewing home page');
+            $('#main').html('you are viewing home page');
         },
         show: function(id) {
-            console.log(id)
             var model = new HighScoreModel({
                 id: id
             }),
