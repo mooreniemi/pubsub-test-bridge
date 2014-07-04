@@ -7,6 +7,7 @@ define(function(require) {
 
     require('jquery'),
     require('jasmine-fixture'),
+    require('jasmine-ajax'),
     require('jasmine-jquery');
 
     beforeEach(function() {
@@ -52,12 +53,45 @@ define(function(require) {
 
                     waitsFor(function() {
                         return fetchDone;
-                    }, "model was fetched and view rendered", 5000);
+                    }, 'model was fetched and view rendered', 5000);
 
                     runs(function() {
                         expect($('#main')).toContainText('settlers of catan');
                     });
 
+                });
+            });
+        });
+
+        describe('jasmine-ajax style stubbed response', function() {
+            describe('displaying scores', function() {
+                it('should render correctly', function() {
+                    jasmine.Ajax.install();
+
+                    var testResponse = {
+                        status: 200,
+                        responseText: {
+                            id: 1,
+                            game: 'settlers of catan'
+                        }
+                    },
+                        model = new HighScoreModel({
+                            id: 'test'
+                        }),
+                        view = new HighScoreView({
+                            model: model
+                        });
+
+                    model.fetch().done(function() {
+                        var request = jasmine.Ajax.requests.mostRecent();
+                        request.response(testResponse);
+
+                        expect($('#main')).toContainText('settlers of catan');
+                    })
+
+                    this.after(function() {
+                        jasmine.Ajax.uninstall();
+                    });
                 });
             });
         });
