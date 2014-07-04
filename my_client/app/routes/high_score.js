@@ -13,7 +13,7 @@ define([
             'high_scores/:id': 'show'
         },
         home: function() {
-            $('#main').html('you are viewing home page');
+            $('#main').html('<div class="container">you are viewing home page</div>');
         },
         show: function(id) {
             var model = new HighScoreModel({
